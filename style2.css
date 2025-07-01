@@ -1,0 +1,205 @@
+body {
+  font-family: Arial, sans-serif;
+  background-image: url('images/bge.jpg');
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+}
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: rgba(23, 15, 28, 0.6);
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: larger;
+  align-items: center;
+  list-style-type: none;
+  height: 45px;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  padding: 0 12px;
+  list-style: none;
+  color: white;
+}
+
+.brand img {
+  width: 44px;
+  padding: 0 8px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  font-weight: normal;
+  font-size: 1.4rem;
+  margin-left: 0.2px;
+}
+
+nav ul li a {
+  color: white;
+}
+.container {
+  margin: 80px auto;
+  padding: 20px;
+  background-color: rgba(22, 0, 34, 0.7);
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  color: white;
+}
+
+.container.my-4 {
+  margin-bottom: 20px; /* Reduce margin-bottom to 20px */
+}
+
+.container h2 {
+  font-size: 24px; /* Adjust heading font size */
+}
+
+.container form {
+  margin-top: 20px; /* Adjust top margin for the form */
+}
+
+.container form label {
+  display: block;
+  margin-bottom: 10px; /* Adjust margin between label and select */
+}
+
+.container form select {
+  border: 2px solid #999;
+  border-radius: 20px;
+  outline: none;
+  font-size: 15px;
+  padding: 10px 20px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 20px; /* Adjust margin bottom for select */
+}
+
+.container form button {
+  background-color: #007bff; /* Set button background color */
+  color: white; /* Set button text color */
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.container form button:hover {
+  background-color: #0056b3;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+th,
+td {
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+}
+th {
+  background-color: #333;
+  color: #fff;
+}
+.edit,
+.delete {
+  padding: 6px 10px;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 3px;
+  transition: background-color 0.3s ease;
+}
+.edit:hover,
+.delete:hover {
+  background-color: #0056b3;
+}
+.popup {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  max-width: 500px;
+  background-color: #fefefe;
+  border: 1px solid #888;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  color: #333; /* Set text color inside the popup */
+}
+
+.popup-content {
+  margin-bottom: 20px; /* Add some margin at the bottom */
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+h2 {
+  margin-top: 0; /* Remove default margin for the heading */
+}
+
+.delete-btn {
+  color: white;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a.btn.btn-sm.btn-primary.delete {
+  color: white;
+}
+label, select {
+  border: 2px solid #999; /* Set border color */
+  border-radius: 20px; /* Set border radius */
+  outline: none;
+  font-size: 15px;
+  padding: 10px 20px; /* Set padding */
+  margin: 0px; 
+  width: 100%; /* Set width to fill the container */
+  box-sizing: border-box; /* Include padding and border in the element's total width */
+}
+.submitBtn {
+  color: rgba(34, 34, 34, 0.7);
+  background: #f0a30a;
+  padding: 8px 16px;
+  font-size: 22px;
+  border: 2px solid rgba(34, 34, 34, 0.7);
+  border-radius: 20px;
+  cursor: pointer;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+}

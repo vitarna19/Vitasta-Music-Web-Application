@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artist</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+        }
+        
+        h1 {
+            margin-top: 30px;
+            margin-left: 1px;
+            color: #43004f;
+            font-size: 26pt;
+        }
+        
+        strong {
+            color: #43004f;
+            font-size: 16pt;
+        }
+        
+        .background-image {
+            background-image: url('images/astha.jpg');
+            background-size: cover;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+        
+        .content ul{
+            list-style-type: none;
+        }
+        
+        .singer {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            margin-left: 30px; 
+            font-size: 15pt;
+        }
+        
+        .singer img {
+            width: 65px;
+            height: 65px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+        
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            background-color: rgba(23, 15, 28, 0.6);
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        nav ul {
+            display: flex;
+            font-family: 'Ubuntu', sans-serif;
+            font-size: larger;
+            align-items: center;
+            list-style-type: none;
+            height: 45px;
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+        
+        nav ul li {
+            padding: 0 12px;
+            list-style: none;
+            color: white;
+        }
+        
+        .brand img {
+            width: 44px;
+            padding: 0 8px;
+        }
+        
+        .brand {
+            display: flex;
+            align-items: center;
+            font-weight: normal;
+            font-size: 1.4rem;
+            margin-left: 0.2px;
+        }
+        
+        nav ul li a {
+            color: white;
+        }
+        
+        .content {
+            padding: 20px;
+            color: white;
+            margin-top: 60px;
+            margin-left: 100px; 
+        }
+    </style>
+</head>
+<body>
+    <div class="background-image"></div>
+    <nav>
+        <ul>
+            <li class="brand"><img src="images/music.jpg" alt="Music library - Vitasta"> Vitasta </li>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="sql.php">Album</a></li>
+            <li><a href="artist.html">Artist</a></li>
+            <li><a href="help.html">Help</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+    <div class="content">
+        <h1>Top Bollywood Singers</h1>
+        <ul>
+            <li>
+                <div class="singer">
+                    <img src="artists/armaan.jpeg" alt="Armaan Malik">
+                    <strong>Armaan Malik: </strong> Soulful playback singer with chart-topping hits.
+                </div>
+            </li>
+            <li>
+                <div class="singer">
+                    <img src="artists/arijit.jpg" alt="Arijit Singh">
+                    <strong>Arijit Singh: </strong> Versatile and emotional voice, multiple award winner.
+                </div>
+            </li>
+            <li>
+                <div class="singer">
+                    <img src="artists/neha.jpeg" alt="Neha Kakkar">
+                    <strong>Neha Kakkar: </strong> Energetic singer known for party anthems.
+                </div>
+            </li>
+            <li>
+                <div class="singer">
+                    <img src="artists/asees.jpg" alt="Asees Kaur">
+                    <strong>Asees Kaur: </strong> Rising star with melodious vocals.
+                </div>
+            </li>
+            <li>
+                <div class="singer">
+                    <img src="artists/darshan.jpg" alt="Darshan Raval">
+                    <strong>Darshan Raval: </strong> Reality show sensation, known for romantic ballads.
+                </div>
+            </li>
+            <li>
+                <div class="singer">
+                    <img src="artists/jonita.avif" alt="Jonita Gandhi">
+                    <strong>Jonita Gandhi: </strong> Melodious voice, versatile in various genres.
+                </div>
+            </li>
+            <li>
+                <div class="singer">
+                    <img src="artists/jubin.jpeg" alt="Jubin Nautiyal">
+                    <strong>Jubin Nautiyal: </strong> Soulful singer, master of romantic tracks.
+                </div>
+            </li>
+            <li>
+                <div class="singer">
+                    <img src="artists/tulsi.jpeg" alt="Tulsi Kumar">
+                    <strong>Tulsi Kumar: </strong>  Sweet and melodious vocals, versatile repertoire.
+                </div>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

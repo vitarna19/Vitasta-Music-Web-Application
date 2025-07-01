@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(images/astha.jpg);
+    background-size: cover;
+}
+
+h1 {
+    margin-top: 50px;
+    margin-left: 60px;
+    color: #360055;
+    font-size: 32pt;
+    font-family: "Sedan", serif;
+    font-weight: 800;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); 
+    transition: transform 0.3s ease-in-out; 
+}
+
+h1:hover {
+    transform: scale(1.05); 
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: rgba(23, 15, 28, 0.6);
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: larger;
+    align-items: center;
+    list-style-type: none;
+    height: 45px;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    padding: 0 12px;
+    list-style: none;
+    color: white;
+}
+
+.brand img {
+    width: 44px;
+    padding: 0 8px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    font-weight: normal;
+    font-size: 1.4rem;
+    margin-left: 0.2px;
+}
+
+nav ul li a {
+    color: white;
+}
+
+.container {
+    min-height: 72vh;
+    color: white;
+    display: flex;
+    margin: 23px auto;
+    width: 70%;
+    border-radius: 12px;
+    padding: 34px;
+}
+
+.bottom {
+    position: sticky;
+    bottom: 0;
+    height: 130px;
+    background-color: #170f1c;
+    opacity: 0.6;
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.icons {
+    margin-top: 14px;
+}
+
+.icons i {
+    cursor: pointer;
+}
+
+#myProgressBar {
+    width: 80vw;
+    cursor: pointer;
+}
+
+.songItemContainer {
+    margin-top: 44px;
+}
+
+.songItem {
+    width: 550px;
+    height: 50px;
+    display: flex;
+    background-color:#160022;
+    opacity: 0.8;
+    color: white;
+    margin: 15px 0;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 34px;
+}
+
+span {
+    font-size: 18px;
+}
+
+.songItem img {
+    width: 43px;
+    margin: 0 23px;
+    border-radius: 34px;
+}
+
+.timestamp {
+    margin: 0 23px;
+}
+
+.timestamp i {
+    cursor: pointer;
+}
+
+.songInfo {
+    position: absolute;
+    left: 10vw;
+}
+
+.songInfo img {
+    opacity: 0;
+    transition: opacity 0.4s ease-in;
+}
+
+@media only screen and (max-width: 1100px) {
+    body {
+        background-color: rgb(107, 45, 48);
+    }
+}
